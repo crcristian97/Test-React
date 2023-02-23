@@ -1,0 +1,17 @@
+p {
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center
+  }
+  
+  /* If message is present and not empty */
+  p:not(:empty) {
+    color: green;
+  }
+  
+  /* If message is not present or empty */
+  p:empty,
+  p:empty::before {
+    content: "Error";
+    color: red;
+  }
